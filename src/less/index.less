@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+body{
+	height: 1000px;
+}
+/* 以上是公共样式 */
+/* 下面是轮播 */
+.box{
+	width: 100%;
+}
+.indexBanner {
+	width: 100%;
+}
+.indexBanner .focus {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    margin-top: 2px;
+    height: 392.55px;
+}
+.indexBanner .focus ul{
+	height: 380px;
+	width: 500%;
+    position: absolute;
+}
+.indexBanner .focus ul li{
+	width: 20%;
+	float: left;
+    position: relative;
+    overflow: hidden;
+}
+.indexBanner .focus ul li img{
+	width: 100%;
+}
+/* 图片文字1 */
+.indexBanner .focus .focus-text{
+	position: absolute;
+    bottom: 10%;
+    right: 318px;
+    z-index: 2000;
+    display: block;
+    line-height: 37px;
+    background: #313942;
+    padding: 0 1%;
+}
+/* 左边按钮 */
+.indexBanner .focus .focus-left{
+	position: absolute;
+    bottom: 10%;
+    right: 279px;
+    z-index: 2000;
+    background: #fff;
+    z-index: 30px;
+    display: block;
+    cursor: pointer;
+}
+/* 右边按钮 */
+.indexBanner .focus .focus-right{
+	position: absolute;
+    bottom: 10%;
+    right: 240px;
+    background: #fff;
+    z-index: 2000;
+    display: block;
+    cursor: pointer;
+}
+.indexBanner .focus img{
+    width: auto;
+}
+/* 图片上的文字2 */
+.indexBanner .focus li div{
+    width: 300px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    padding: 10px;
+    background: #e94609;
+    border: 1px #e94609 solid;
+    opacity: 0.5;
+}
+/* 内容区 */
+.indexBanner .content{
+	width: 1440px;
+	height: 500px;
+	margin: 0 auto;
+	padding: 50px 0;
+	color: #5b5b5b;
+	font-size: 12px;
+}
+.indexBanner .content .content-left,.indexBanner .content .content-content,.indexBanner .content .content-right{
+	width: 29%;
+    padding: 0 30px;
+}
+.content h2{
+    padding:10px 0 ;
+}
+.indexBanner .content .content-left li{
+    height: 21.6px;
+}
+.indexBanner .content .content-left li span{
+    float: right;  
+}
+@import url('./_header.less');
+
+@import url('./_footer.less');
