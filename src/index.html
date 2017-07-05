@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Index</title>
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
-	
+  <!-- <link rel="stylesheet" href="less/_header.less"> -->
+  <!-- <link rel="stylesheet" href="less/_footer.less"> -->
 </head>
-<body>
+<body ng-app="">
+  <div ng-include="'html/header.html'"></div>
 	<div class="box">
 		<div class="indexBanner">
 			<div class="focus">
@@ -64,7 +66,7 @@
 						<li>K系列移动破碎站应用于建筑垃圾... <span>[2017-05-26]</span></li>
 						<li>太湖垃圾倾倒事件引思考 上海推... <span>[2017-05-26]</span></li> -->
 						<span>></span><a href="">更多</a>
-					</ul>	
+					</ul>
 				</div>
 				<div class="content-right right">
 					<div>
@@ -88,12 +90,14 @@
 					<h3>更专业</h3>
 					<p>上海西芝矿山工程机械有限公司始终专注于工业破碎、磨粉设备以及其他相关辅助设备的研究、开发与生产应用，提供先进的设备和完美的服务。</p>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
+  <div ng-include="'html/footer.html'"></div>
 </body>
+
     <script src='./js/jquery.min.js'></script>
     <script type="text/javascript" src="./js/index.js"></script>
-    
+    <script src='./js/angular.min.js'></script>
 </html>
