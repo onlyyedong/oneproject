@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第二个页面</title>
+	
+</head>
+<body ng-app="">
+	<!-- 引入固定的头部组件 -->
+	<div ng-include="'./html/header.html'"></div>
+
+	
+<div class="content">
+	
+
+	<div class="menu-nav">
+		<div class="menu-nav-content">
+			<span>>home</span>>About Us
+		</div>
+	</div>
+	<div class="content-two">
+		<!-- 内容左边区域 -->
+		<div class="conleft">
+			<ul>
+				<li>
+					<a href="">Zenith In Brief</a>
+				</li>
+				<li>
+					<a href="">Zenith Technology</a>
+				</li>
+				<li>
+					<a href="">Zenith Factory</a>
+				</li>
+				<li>
+					<a href="">Zenith Service</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 内容右边区域 -->
+		<div class="conright">
+			<div class="conright-top">
+				<h1>About Us</h1>
+			</div>
+			<!-- 右边区域的左边内容 -->
+			<div class="conright-left">
+				<div class="conright-left-baner">
+					<img src="images/banner.jpg">
+				</div>
+				<div class="eachBox">
+					<div class="eachBox-img">
+						<a href="">
+							<img src="images/about_index01.jpg">
+						</a>
+					</div>
+					<div class="eachBox-text">
+						<h2>Zenith In Brief</h2>
+						<p>Shanghai Zenith Mining and Construction Machinery Co., Ltd. is a hi-tech, engineering group. We are specialized in the research, development, and prod</p>
+						<p class="more">>&nbsp;&nbsp;learnMore</p>
+					</div>
+				</div>
+				<div class="eachBox">
+					<div class="eachBox-img">
+						<a href="">
+							<img src="images/about_index02.jpg">
+						</a>
+					</div>
+					<div class="eachBox-text">
+						<h2>Zenith In Brief</h2>
+						<p>Shanghai Zenith Mining and Construction Machinery Co., Ltd. is a hi-tech, engineering group. We are specialized in the research, development, and prod</p>
+						<p class="more">>&nbsp;&nbsp;learnMore</p>
+					</div>
+				</div>
+				<div class="eachBox">
+					<div class="eachBox-img">
+						<a href="">
+							<img src="images/about_index03.jpg">
+						</a>
+					</div>
+					<div class="eachBox-text">
+						<h2>Zenith In Brief</h2>
+						<p>Shanghai Zenith Mining and Construction Machinery Co., Ltd. is a hi-tech, engineering group. We are specialized in the research, development, and prod</p>
+						<p class="more">>&nbsp;&nbsp;learnMore</p>
+					</div>
+				</div>
+				<div class="eachBox">
+					<div class="eachBox-img">
+						<a href="">
+							<img src="images/about_index04.jpg">
+						</a>
+					</div>
+					<div class="eachBox-text">
+						<h2>Zenith In Brief</h2>
+						<p>Shanghai Zenith Mining and Construction Machinery Co., Ltd. is a hi-tech, engineering group. We are specialized in the research, development, and prod</p>
+						<p class="more">>&nbsp;&nbsp;learnMore</p>
+					</div>
+				</div>
+
+				
+			</div>
+			<!-- 右边区域的右边内容 -->
+			<div class="conright-right">
+				<div class="title">
+					<h2>CONTACT US</h2>
+				</div>
+				<form>
+					<p>Fill in this form or click the service online, all questions will be answered.</p>
+					<div>
+						<input type="" name="" placeholder="Name">
+					</div>
+					<div>
+						<input type="" name="" placeholder="Email">
+					</div>
+					<div>
+						<input type="" name="" placeholder="Country">
+					</div>
+					<select>
+						<option>Others</option>
+						<option>Usdsj</option>
+						<option>Ploikj</option>
+						<option>Ausijm</option>
+					</select>
+					<textarea name="content" style="width:100%;height:70px;border:1px solid #d7d9d8;margin:6px 0;;padding-left:3px" id="formMsg" placeholder="Inquiry"></textarea>
+					<input type="submit" name="" value=" Send Message " id="submit">
+				</form>
+				<div class="sideContact">
+					<p><img src="images/tel1.jpg">0086-21-58386256</p>
+					<p><img src="images/fax1.jpg">0086-21-58385887</p>
+					<p><img src="images/email1.jpg">info@zenithcrusher.com</p>
+					
+				</div>
+				<div class="servOnline">
+					<p>SERVICE ONLINE <span>></span></p>
+					
+				</div>
+				<div class="imgs">
+					<a href="">
+						<img src="images/LM.jpg" alt="">
+					</a>
+					<a href="">
+						<img src="images/K-mobile-crushing-station.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- 引入固定的底部组件 -->
+			<div ng-include="'./html/footer.html'"></div>
+
+	</div>
+</div>
+	<link rel="stylesheet" type="text/css" href="less/index-2.less">
+	<script type="text/javascript" src="libs/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="less/_header.less">
+	<link rel="stylesheet" type="text/css" href="less/_footer.less">
+	
+</body>
+</html>
