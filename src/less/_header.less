@@ -1,4 +1,103 @@
-.header{
-	font-size:20px;
-	background-color: #f2f2f2;
+/* 淘宝的通用样式 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { f
+	ont-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+*{
+	padding: 0;
+	margin: 0;
 }
+/* 头部-top样式 */
+.header{
+	width: 100%;
+	height:79px;	
+}
+.header .header-top{
+	width: 1440px;
+	height: 79px;
+	margin: 0 auto;	
+}
+.header .header-top .logo{
+	float: left;	
+}
+.header .header-top .logo img{
+	margin-top: 23px;
+}
+.header .header-top .search{
+	width:200px;
+	height: 29px;
+	float: left;
+	padding-top: 26px;
+	margin-left: 800px;
+}
+.header .header-top .search input{
+	width: 160px;
+	height: 25px;
+	float: left;
+}
+.header .header-top .search span{
+	display: inline-block;
+	width:29px;	
+	height: 29px;
+	background-color: yellow;
+	background: url(../imgs/btn_search.png) center center no-repeat;
+	float: left;
+	cursor: pointer;
+}
+.header .header-top .href .hrefs{
+	height:79px; 
+	width: 200px;
+	float: left;
+	line-height: 97px;
+	margin-left: 30px;
+}
+.header .header-top .href .hrefs li{
+	float: left;
+	margin-right: 15px;
+}
+/* 头部下边导航条样式 */
+.header .header-bottom{
+	width: 100%;
+	height: 28px;
+	background-color: #30384A;
+}
+.header .header-bottom .header-bottom-nav{
+	width:1440px;
+	height: 28px;
+	margin: 0 auto;
+	
+}
+.header .header-bottom .header-bottom-nav .navs{
+	width: 1440px;
+	height: 28px;
+}
+.header .header-bottom .header-bottom-nav .navs li{
+	width: 236px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	border-right: 1px solid #7E8693;
+}
+.header .header-bottom .header-bottom-nav .navs li:hover{
+	background-color: #DB460F;
+}
+.header .header-bottom .header-bottom-nav .navs li a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+/* 头部样式结束 */
