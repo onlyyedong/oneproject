@@ -19,7 +19,7 @@ var less = require('gulp-less');
 var cssnano = require('gulp-cssnano');
 
 gulp.task('less',function(){
-	gulp.src('src/less/**/*.less')
+	gulp.src(['src/less/**/*.less','!src/less/_*.less'])
 	.pipe(less())
 	.pipe(cssnano())
 	.pipe(gulp.dest('dist/css'))
@@ -50,7 +50,7 @@ gulp.task('js',function(){
 
 gulp.task('watch',function(){
 	gulp.watch('src/**/*.html',['html']);
-	gulp.watch('src/less/**/*.less',['css']);
+	gulp.watch('src/less/**/*.less',['less']);
 	gulp.watch('src/js/**/*.js',['js']);
 })
 
