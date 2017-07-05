@@ -19,12 +19,13 @@ var less = require('gulp-less');
 var cssnano = require('gulp-cssnano');
 
 gulp.task('less',function(){
-	gulp.src(['src/less/**/*.less','!src/less/_*.less'])
+	gulp.src('src/less/**/*.less')
 	.pipe(less())
 	.pipe(cssnano())
 	.pipe(gulp.dest('dist/css'))
 	.pipe(browserSync.reload({stream:true}))
 })
+
 // 压缩img
 gulp.task('testImagemin', function () {
     gulp.src('src/images/**/*.{png,jpg,gif,ico}')
@@ -38,7 +39,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
 gulp.task('js',function(){
-	gulp.src(['src/js/**/*.js','node_modules/jquery/dist/jquery.min.js'])
+	gulp.src(['src/js/**/*.js','node_modules/jquery/dist/jquery.min.js','src/libs/angular.min.js'])
 	// .pipe(concat('app.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('dist/js'))
@@ -49,7 +50,7 @@ gulp.task('js',function(){
 
 gulp.task('watch',function(){
 	gulp.watch('src/**/*.html',['html']);
-	gulp.watch('src/less/**/*.less',['less']);
+	gulp.watch('src/less/**/*.less',['css']);
 	gulp.watch('src/js/**/*.js',['js']);
 })
 

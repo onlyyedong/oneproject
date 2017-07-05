@@ -1,6 +1,6 @@
 /* 淘宝的通用样式 */
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
-body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial; }
 h1, h2, h3, h4, h5, h6{ font-size:100%; }
 address, cite, dfn, em, var { font-style:normal; }
 code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
@@ -22,15 +22,15 @@ table { border-collapse:collapse; border-spacing:0; }
 /* 头部-top样式 */
 .header{
 	width: 100%;
-	height:79px;	
+	height:79px;
 }
 .header .header-top{
 	width: 1440px;
 	height: 79px;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 .header .header-top .logo{
-	float: left;	
+	float: left;
 }
 .header .header-top .logo img{
 	margin-top: 23px;
@@ -49,7 +49,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .header .header-top .search span{
 	display: inline-block;
-	width:29px;	
+	width:29px;
 	height: 29px;
 	background-color: yellow;
 	background: url(../imgs/btn_search.png) center center no-repeat;
@@ -57,7 +57,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	cursor: pointer;
 }
 .header .header-top .href .hrefs{
-	height:79px; 
+	height:79px;
 	width: 200px;
 	float: left;
 	line-height: 97px;
@@ -67,6 +67,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	float: left;
 	margin-right: 15px;
 }
+
 /* 头部下边导航条样式 */
 .header .header-bottom{
 	width: 100%;
@@ -77,7 +78,7 @@ table { border-collapse:collapse; border-spacing:0; }
 	width:1440px;
 	height: 28px;
 	margin: 0 auto;
-	
+
 }
 .header .header-bottom .header-bottom-nav .navs{
 	width: 1440px;
@@ -97,6 +98,8 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .header .header-bottom .header-bottom-nav .navs li a{
 	text-decoration: none;
+  width: 100%;
+  display: inline-block;
 	color: white;
 	font-size: 14px;
 }
